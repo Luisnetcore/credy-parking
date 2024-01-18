@@ -13,8 +13,8 @@ import { MaterialModule } from './modules/material/material.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     MaterialModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
   ],
   providers:[
