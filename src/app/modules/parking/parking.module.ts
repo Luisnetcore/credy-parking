@@ -4,16 +4,18 @@ import { ParkingRoutingModule } from './parking-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { ParkingComponent } from './page/parking/parking.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { RegisterVehicleComponent } from './components/register-vehicle/register-vehicle.component';
+import { RegisterVehicleComponent } from './page/register-vehicle/register-vehicle.component';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
-import { ListVehiclesComponent } from './components/list-vehicles/list-vehicles.component';
+import { ListVehiclesComponent } from './page/list-vehicles/list-vehicles.component';
+import { VehicleCardComponent } from './components/vehicle-card/vehicle-card.component';
 
 
 @NgModule({
   declarations: [
     ParkingComponent,
     RegisterVehicleComponent,
-    ListVehiclesComponent
+    ListVehiclesComponent,
+    VehicleCardComponent
   ],
   imports: [
     MaterialModule,
