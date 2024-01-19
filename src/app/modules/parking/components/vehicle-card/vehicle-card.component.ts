@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Vehicle } from '../../../../shared/model/Vehicle';
 import { globals } from '../../../../shared/constants/globals';
+import { Vehicle } from '../../../../shared/model/Vehicle';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-vehicle-card',

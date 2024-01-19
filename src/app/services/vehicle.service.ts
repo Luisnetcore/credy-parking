@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
 import { vehicles } from '../../assets/server-mock/vehicles';
 import { Vehicle } from '../shared/model/Vehicle';
+import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'

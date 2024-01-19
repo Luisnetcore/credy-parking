@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RegisterVehicleComponent } from './page/register-vehicle/register-vehicle.component';
+import { VehicleCardComponent } from './components/vehicle-card/vehicle-card.component';
+import { ListVehiclesComponent } from './page/list-vehicles/list-vehicles.component';
+import { TimeElapsedPipe } from '../../shared/pipe/time-elapsed.pipe';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+import { ParkingComponent } from './page/parking/parking.component';
 import { ParkingRoutingModule } from './parking-routing.module';
 import { MaterialModule } from '../material/material.module';
-import { ParkingComponent } from './page/parking/parking.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { RegisterVehicleComponent } from './page/register-vehicle/register-vehicle.component';
-import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
-import { ListVehiclesComponent } from './page/list-vehicles/list-vehicles.component';
-import { VehicleCardComponent } from './components/vehicle-card/vehicle-card.component';
-import { TimeElapsedPipe } from '../../shared/pipe/time-elapsed.pipe';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 
 @NgModule({
