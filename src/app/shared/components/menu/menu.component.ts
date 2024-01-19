@@ -16,10 +16,10 @@ export class MenuComponent {
 
     switch(option){
       case 1:
-        this.router.navigate(['/dashboard/credy-parking']);
+        this.router.navigate(['/dashboard/credy-parking/registrar']);
         break;
       case 2:
-        this.router.navigate(['/dashboard/credy-parking/vehiculos']);
+        this.router.navigate(['/dashboard/credy-parking/listar']);
         break;
     }
 
