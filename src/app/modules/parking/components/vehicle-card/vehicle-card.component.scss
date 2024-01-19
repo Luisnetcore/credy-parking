@@ -1,6 +1,13 @@
-.card-vehicle {
-    max-width: max-content;
+.car {
+    max-width: 560px;
+}
+
+.card-vehicle-content {
     padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
 
     &__plaque {
         display: flex;
@@ -15,5 +22,28 @@
         border: 3px solid #8d8181;
         width: 100px;
         text-align: center;
+    }
+
+    &__type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span img {
+            width: 53px;
+        }
+    }
+
+    &__type-text {
+        padding: 10px;
+        text-align: center;
+        margin-top: 28px;
+    }
+
+    &__totalAmount {
+        border: 3px solid green;
+        background-color: #b5ffb5;
+        padding: 4px;
+        margin-top: 22px;
     }
 }

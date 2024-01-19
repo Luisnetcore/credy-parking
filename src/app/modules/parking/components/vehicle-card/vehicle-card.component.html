@@ -1,14 +1,25 @@
-<mat-card class="card-vehicle">
-    <mat-card-content>
+<mat-card class="card">
+    <mat-card-content class="card-vehicle-content">
         
-        <div class="card-vehicle__plaque">
+        <div class="card-vehicle-content__plaque">
             <span><strong>{{'PLAQUE' | translate}}</strong></span>
-            <span class="card-vehicle__plaque-text"><strong>{{vehicle?.plaque}}</strong></span>
+            <span class="card-vehicle-content__plaque-text"><strong>{{vehicle?.plaque}}</strong></span>
         </div>
 
-        <div class="card-vehicle__type">
-            <span><strong>{{'TYPE' | translate}}</strong></span>
-            <span class="card-vehicle__plaque-text"><strong>{{vehicle?.type}}</strong></span>
+        <div class="card-vehicle-content__type">
+            <span class="card-vehicle-content__type-text"><img [src]="icon"></span>
+        </div>
+
+        <div class="card-vehicle-content__totalAmount">
+            <span class="card-vehicle-content__totalAmount-text">{{ vehicle?.totalAmount | currency:'COP ':'symbol':'1.0-0' }}</span>
+        </div>
+
+        <div class="card-vehicle-content__hours">
+            <span class="card-vehicle-content__hours-text">{{ vehicle!.dateAdmision | timelapsed }}</span>
+        </div>
+
+        <div class="card-vehicle-content__button">
+            <button mat-raised-button color="primary">{{'LIQUIDATE' | translate}}</button>
         </div>
 
     </mat-card-content>

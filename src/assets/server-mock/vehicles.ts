@@ -36,7 +36,7 @@ export let vehicles: Vehicle[] = [
     },
     {
         plaque: "GW todo terreno",
-        type: "Bicleta",
+        type: "Bicicleta",
         driver: {
             identification: "123456689",
             names: "Alfredo"
@@ -47,7 +47,7 @@ export let vehicles: Vehicle[] = [
     },
     {
         plaque: "Tucana Green",
-        type: "Bicleta",
+        type: "Bicicleta",
         driver: {
             identification: "123456785",
             names: "Norberto"

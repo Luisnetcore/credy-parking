@@ -8,6 +8,7 @@ import { RegisterVehicleComponent } from './page/register-vehicle/register-vehic
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 import { ListVehiclesComponent } from './page/list-vehicles/list-vehicles.component';
 import { VehicleCardComponent } from './components/vehicle-card/vehicle-card.component';
+import { TimeElapsedPipe } from '../../shared/pipe/time-elapsed.pipe';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { VehicleCardComponent } from './components/vehicle-card/vehicle-card.com
     ParkingComponent,
     RegisterVehicleComponent,
     ListVehiclesComponent,
-    VehicleCardComponent
+    VehicleCardComponent,
+    TimeElapsedPipe
   ],
   imports: [
     MaterialModule,

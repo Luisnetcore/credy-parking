@@ -1,4 +1,6 @@
 {
     "REGISTER": "Registrar",
-    "PLAQUE": "Placa"
+    "PLAQUE": "Placa",
+    "TYPE":"Tipo",
+    "LIQUIDATE":"Liquidar"
 }
