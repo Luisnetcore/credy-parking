@@ -3,6 +3,7 @@ import { globals } from '../../../../shared/constants/globals';
 import { Vehicle } from '../../../../shared/model/Vehicle';
 import { Component, Input, OnInit } from '@angular/core';
 import { VehicleService } from '../../../../services/vehicle.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-vehicle-card',
@@ -14,7 +15,7 @@ export class VehicleCardComponent implements OnInit{
   @Input() vehicle?:Vehicle;
   public icon?:string;
 
-  constructor(private vehicleService:VehicleService){
+  constructor(private vehicleService:VehicleService, private translate:TranslateService){
 
   }
 
@@ -33,9 +34,9 @@ export class VehicleCardComponent implements OnInit{
 
         if(response){
           Swal.fire({
-            text: "¡Liquidación exitosa!",
+            text: this.translate.instant('LIQUIDATE_OKLIQUIDATE_OK'),
             icon: 'success',
-            confirmButtonText: "Aceptar",
+            confirmButtonText: this.translate.instant('ACCEPT'),
           }).then((result) => {
             if (result.isConfirmed) {
             }
@@ -44,9 +45,9 @@ export class VehicleCardComponent implements OnInit{
 
           //esto es un ejemplo, solo por dar una simulación de error
           Swal.fire({
-            text: "¡Error en la liquidación, intente de nuevo por favor!",
+            text: this.translate.instant('LIQUIDATE_OKLIQUIDATE_OK'),
             icon: 'error',
-            confirmButtonText: "Aceptar",
+            confirmButtonText: this.translate.instant('ACCEPT'),
           }).then((result) => {
             if (result.isConfirmed) {
             }

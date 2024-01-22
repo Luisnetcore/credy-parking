@@ -7,5 +7,12 @@ export interface Vehicle {
     dateAdmision: string;
     formattedTime:string;
     totalAmount: number;
-    inPraking: boolean
+    inParking: boolean
+}
+
+export interface VehicleRegister{
+    plaque: string;
+    type: string;
+    driver: Driver;
+    entryTime:string;
 }

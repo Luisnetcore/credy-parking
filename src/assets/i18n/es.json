@@ -1,5 +1,6 @@
 {
     "REGISTER": "Registrar",
+    "ACCEPT":"Aceptar",
     "PLAQUE": "Placa",
     "TYPE":"Tipo",
     "LIQUIDATE":"Liquidar",
@@ -12,5 +13,9 @@
     "NAMES_CONDUCTOR":"Nombres",
     "TITLE_REGISTER":"Registro de vehículo",
     "ERROR_IDENTIFICATION_NUMBERS":"El campo de identificación solo puede contener números.",
-    "ERROR_IDENTIFICATION_NUMBERS_MIN":"La longitud mínima debe ser de 6 caracteres."
+    "ERROR_IDENTIFICATION_NUMBERS_MIN":"La longitud mínima debe ser de 6 caracteres.",
+    "ERROR_NAMES_NOT_NUMBERS":"El campo de nombres no puede contener números.",
+    "REGISTER_OK":"¡Registro exitoso!",
+    "LIQUIDATE_OK":"¡Liquidación exitosa!",
+    "LIQUIDATE_ERROR":"¡Error en la liquidación, intente de nuevo por favor!"
 }

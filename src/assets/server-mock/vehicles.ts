@@ -10,7 +10,7 @@ export let vehicles: Vehicle[] = [
         },
         dateAdmision: '14:23:00',
         totalAmount:1200,
-        inPraking:true,
+        inParking:true,
         formattedTime:"2 mn"
     },
     {
@@ -22,7 +22,7 @@ export let vehicles: Vehicle[] = [
         },
         dateAdmision: '14:23:00',
         totalAmount:1200,
-        inPraking:true,
+        inParking:true,
         formattedTime:"2 mn"
     },
     {
@@ -34,7 +34,7 @@ export let vehicles: Vehicle[] = [
         },
         dateAdmision: '14:23:00',
         totalAmount:1200,
-        inPraking:true,
+        inParking:true,
         formattedTime:"2 mn"
     },
     {
@@ -46,7 +46,7 @@ export let vehicles: Vehicle[] = [
         },
         dateAdmision: '14:23:00',
         totalAmount:1200,
-        inPraking:true,
+        inParking:true,
         formattedTime:"2 mn"
     },
     {
@@ -58,7 +58,7 @@ export let vehicles: Vehicle[] = [
         },
         dateAdmision: '14:23:00',
         totalAmount:1200,
-        inPraking:true,
+        inParking:true,
         formattedTime:"2 mn"
     },
     {
@@ -70,7 +70,7 @@ export let vehicles: Vehicle[] = [
         },
         dateAdmision: '14:23:00',
         totalAmount:15000,
-        inPraking:true,
+        inParking:true,
         formattedTime:"5 horas"
     }
 ];

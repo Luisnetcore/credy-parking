@@ -1,4 +1,4 @@
 <div class="container-register">
     <h2 class="title-register">{{'TITLE_REGISTER' | translate}}</h2>
-    <app-form-register></app-form-register>
+    <app-form-register (registerEvent)="register($event)"></app-form-register>
 </div>

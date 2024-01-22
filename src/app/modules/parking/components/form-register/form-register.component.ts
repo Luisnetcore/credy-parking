@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { globals } from '../../../../shared/constants/globals';
+import { VehicleRegister } from '../../../../shared/model/Vehicle';
 
 @Component({
   selector: 'app-form-register',
@@ -8,27 +9,35 @@ import { globals } from '../../../../shared/constants/globals';
   styleUrl: './form-register.component.scss'
 })
 export class FormRegisterComponent {
-  formulario: FormGroup;
+
+  @Output() registerEvent = new EventEmitter<VehicleRegister>();
+
+
+  form: FormGroup;
   types?:string[];
   hour?:string;
+  vehicle?:VehicleRegister;
 
   constructor(private fb: FormBuilder) {
 
-    this.formulario = this.fb.group({
-      nombre: ['', Validators.required],
-      edad: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
+    this.form = this.fb.group({
+      plaque: ['', Validators.required],
+      time: ['', Validators.required],
+      driver: this.fb.group({
+        identification: ['', [Validators.required, Validators.pattern(/^\d+$/), Validators.minLength(6)]],
+        names: ['', [Validators.required, Validators.pattern(/^[^\d]+$/)]],
+    }),
+      type: ['', Validators.required]
     });
 
     this.types = globals.TYPE_VEHICLE;
-    
+    this.form.patchValue(this.vehicle!);
   }
 
   handleSubmit() {
-    // if (this.formulario.valid) {
-    //   console.log('Datos del formulario:', this.formulario.value);
-    //   this.formulario.reset();
-    // }
-    console.log("click")
+   
+    console.log(this.form.value)
+
+    this.registerEvent.emit(this.form.value);
   }
 }
