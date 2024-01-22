@@ -1,1 +1,45 @@
-<p>form-register works!</p>
+<form [formGroup]="formulario" (ngSubmit)="handleSubmit()" class="form-register">
+    <mat-form-field>
+        <mat-label>{{'SELECT_TYPE_VEHICLE' | translate}}</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let type of types" value="{{type}}">{{type}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+  
+    <mat-form-field>
+        <mat-label>{{'PLAQUE' | translate}}</mat-label>
+        <input matInput name="plaque">
+    </mat-form-field>
+  
+        <mat-label>{{'ENTRY_TIME' | translate}}</mat-label>
+        <input name="time" class="time" placeholder="{{'PLACEHOLDER_DATE_FROM' | translate}}"
+        [ngxTimepicker]="from" [format]="24" readonly>
+    <ngx-material-timepicker #from></ngx-material-timepicker>
+
+    <hr>
+
+    <div class="data-conductor">
+        <div class="data-conductor__title">
+            <span><strong>{{'CONDUCTOR' | translate}}</strong></span> <img width="50" src="../../../../../assets/image/volante.png">
+        </div>
+        
+        <mat-form-field>
+            <mat-label>{{'IDENTIFICATION' | translate}}</mat-label>
+            <input matInput name="identification">
+            <mat-error *ngIf="formulario.get('identification')?.hasError('pattern')">
+                {{'ERROR_IDENTIFICATION_NUMBERS' | translate}}
+              </mat-error>
+              <mat-error *ngIf="formulario.get('identification')?.hasError('minlength')">
+                {{'ERROR_IDENTIFICATION_NUMBERS_MIN' | translate}}
+              </mat-error>
+        </mat-form-field>
+    
+        <mat-form-field>
+            <mat-label>{{'NAMES_CONDUCTOR' | translate}}</mat-label>
+            <input matInput name="nombres">
+        </mat-form-field>
+        
+    </div>
+
+    <button mat-raised-button color="primary" type="submit">{{'REGISTER' | translate}}</button>
+</form>

@@ -23,7 +23,6 @@ export class VehicleCardComponent implements OnInit{
   }
 
   private selectIcon() : void{
-    console.log(globals.ICON_TYPE.find(t => t.icon == this.vehicle?.type)?.icon)
     this.icon = `../../../../../assets/image/${globals.ICON_TYPE.find(t => t.type == this.vehicle?.type)?.icon}`;
   }
 

@@ -7,7 +7,12 @@ export const globals = {
     NAVIGATES:{
         register:"/dashboard/credy-parking/registrar",
         listar:"/dashboard/credy-parking/listar"
-    }
+    },
+    TYPE_VEHICLE:[
+        "Carro",
+        "Motocicleta",
+        "Bicicleta"
+    ]
 }
     
 

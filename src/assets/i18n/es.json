@@ -4,5 +4,13 @@
     "TYPE":"Tipo",
     "LIQUIDATE":"Liquidar",
     "PLACEHOLDER_DATE_FROM":"Desde, (click)",
-    "PLACEHOLDER_DATE_TO":"Hasta, (click)"
+    "PLACEHOLDER_DATE_TO":"Hasta, (click)",
+    "SELECT_TYPE_VEHICLE":"Tipo de vehículo",
+    "ENTRY_TIME":"Hora de entrada",
+    "CONDUCTOR":"Conductor",
+    "IDENTIFICATION":"Identificación",
+    "NAMES_CONDUCTOR":"Nombres",
+    "TITLE_REGISTER":"Registro de vehículo",
+    "ERROR_IDENTIFICATION_NUMBERS":"El campo de identificación solo puede contener números.",
+    "ERROR_IDENTIFICATION_NUMBERS_MIN":"La longitud mínima debe ser de 6 caracteres."
 }

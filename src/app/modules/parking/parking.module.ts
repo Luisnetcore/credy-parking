@@ -1,7 +1,7 @@
 import { RegisterVehicleComponent } from './page/register-vehicle/register-vehicle.component';
+import { FormRegisterComponent } from './components/form-register/form-register.component';
 import { VehicleCardComponent } from './components/vehicle-card/vehicle-card.component';
 import { ListVehiclesComponent } from './page/list-vehicles/list-vehicles.component';
-import { TimeElapsedPipe } from '../../shared/pipe/time-elapsed.pipe';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 import { ParkingComponent } from './page/parking/parking.component';
 import { ParkingRoutingModule } from './parking-routing.module';
@@ -17,7 +17,7 @@ import { NgModule } from '@angular/core';
     RegisterVehicleComponent,
     ListVehiclesComponent,
     VehicleCardComponent,
-    TimeElapsedPipe
+    FormRegisterComponent
   ],
   imports: [
     MaterialModule,

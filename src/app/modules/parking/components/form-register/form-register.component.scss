@@ -1,0 +1,38 @@
+.form-register {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    padding: 50px;
+
+    box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.time {
+    padding: 8px;
+    border: 0;
+    border-bottom: 3px solid #80d8ff;
+    background-color: #f7f8f9;
+}
+
+.data-conductor {
+
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 6px;
+
+    }
+
+    span {
+        font-size: 26px;
+        color: #28527f;
+        border-bottom: 2px solid #8d6eff;
+    }
+}
