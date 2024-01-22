@@ -1,6 +1,3 @@
-.car {
-    max-width: 560px;
-}
 
 .card-vehicle-content {
     padding: 20px;
@@ -12,8 +9,6 @@
     &__plaque {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     &__plaque-text {
@@ -25,9 +20,7 @@
     }
 
     &__type {
-        display: flex;
         justify-content: center;
-        align-items: center;
 
         span img {
             width: 53px;
@@ -45,5 +38,29 @@
         background-color: #b5ffb5;
         padding: 4px;
         margin-top: 22px;
+    }
+
+    &__time{
+        margin-top: 22px;
+        span img{
+            max-width: 46px;
+        }
+    }
+    
+    button{
+        margin-top: 22px;
+    }
+
+    &__plaque,
+    &__type,
+    &__totalAmount,
+    &__time,
+    &__button {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }

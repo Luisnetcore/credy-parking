@@ -11,6 +11,7 @@ export let vehicles: Vehicle[] = [
         dateAdmision: '14:23:00',
         totalAmount:1200,
         inPraking:true,
+        formattedTime:"2 mn"
     },
     {
         plaque: "GHI345",
@@ -22,6 +23,7 @@ export let vehicles: Vehicle[] = [
         dateAdmision: '14:23:00',
         totalAmount:1200,
         inPraking:true,
+        formattedTime:"2 mn"
     },
     {
         plaque: "GHI345",
@@ -33,6 +35,7 @@ export let vehicles: Vehicle[] = [
         dateAdmision: '14:23:00',
         totalAmount:1200,
         inPraking:true,
+        formattedTime:"2 mn"
     },
     {
         plaque: "GW todo terreno",
@@ -44,6 +47,7 @@ export let vehicles: Vehicle[] = [
         dateAdmision: '14:23:00',
         totalAmount:1200,
         inPraking:true,
+        formattedTime:"2 mn"
     },
     {
         plaque: "Tucana Green",
@@ -55,6 +59,7 @@ export let vehicles: Vehicle[] = [
         dateAdmision: '14:23:00',
         totalAmount:1200,
         inPraking:true,
+        formattedTime:"2 mn"
     },
     {
         plaque: "ABC 78A",
@@ -64,7 +69,8 @@ export let vehicles: Vehicle[] = [
             names: "Juan Perez"
         },
         dateAdmision: '14:23:00',
-        totalAmount:1200,
+        totalAmount:15000,
         inPraking:true,
+        formattedTime:"5 horas"
     }
 ];

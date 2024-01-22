@@ -2,5 +2,7 @@
     "REGISTER": "Registrar",
     "PLAQUE": "Placa",
     "TYPE":"Tipo",
-    "LIQUIDATE":"Liquidar"
+    "LIQUIDATE":"Liquidar",
+    "PLACEHOLDER_DATE_FROM":"Desde, (click)",
+    "PLACEHOLDER_DATE_TO":"Hasta, (click)"
 }

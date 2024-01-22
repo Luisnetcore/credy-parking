@@ -1,4 +1,4 @@
-<mat-card class="card">
+<mat-card style="width: 690px;">
     <mat-card-content class="card-vehicle-content">
         
         <div class="card-vehicle-content__plaque">
@@ -10,16 +10,17 @@
             <span class="card-vehicle-content__type-text"><img [src]="icon"></span>
         </div>
 
+        <div class="card-vehicle-content__time">
+            <span><img src="../../../../../assets/image/time.png"></span>
+            <span class="card-vehicle-content__time-text">{{vehicle?.formattedTime}}</span>
+        </div>
+
         <div class="card-vehicle-content__totalAmount">
             <span class="card-vehicle-content__totalAmount-text">{{ vehicle?.totalAmount | currency:'COP ':'symbol':'1.0-0' }}</span>
         </div>
 
-        <div class="card-vehicle-content__hours">
-            <span class="card-vehicle-content__hours-text">{{ vehicle!.dateAdmision | timelapsed }}</span>
-        </div>
-
         <div class="card-vehicle-content__button">
-            <button mat-raised-button color="primary">{{'LIQUIDATE' | translate}}</button>
+            <button mat-raised-button color="primary" (click)="liquidate()">{{'LIQUIDATE' | translate}}</button>
         </div>
 
     </mat-card-content>

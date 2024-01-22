@@ -1,5 +1,19 @@
-.container-list-vehicles{
+.container-list-vehicles {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 20px;
+}
+
+.range-time {
+display: flex;
+gap: 5px;
+
+&__date-from,
+    &__date-to {
+        padding: 8px;
+        border: 0;
+        border-bottom: 3px solid #80d8ff;
+        background-color: #f7f8f9;
+    }
 }

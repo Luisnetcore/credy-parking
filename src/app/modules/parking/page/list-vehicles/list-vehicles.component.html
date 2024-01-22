@@ -1,5 +1,17 @@
-<input placeholder="24hr format" aria-label="24hr format" [ngxTimepicker]="fullTime" [format]="24"  readonly>
-<ngx-material-timepicker #fullTime></ngx-material-timepicker>
+<div class="range-time">
+    <input [(ngModel)]="times!.from" class="range-time__date-from" placeholder="{{'PLACEHOLDER_DATE_FROM' | translate}}"
+        [ngxTimepicker]="from" [format]="24" readonly>
+    <ngx-material-timepicker #from></ngx-material-timepicker>
+
+    <input [(ngModel)]="times!.to" class="range-time__date-to" placeholder="{{'PLACEHOLDER_DATE_TO' | translate}}" [ngxTimepicker]="to" [format]="24"
+        readonly>
+    <ngx-material-timepicker #to></ngx-material-timepicker>
+
+    <button mat-mini-fab color="primary">
+        <mat-icon>search</mat-icon>
+      </button>
+</div>
+
 
 <div class="container-list-vehicles">
     <div *ngFor="let vehicle of vehicles">

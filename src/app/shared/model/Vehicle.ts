@@ -5,6 +5,7 @@ export interface Vehicle {
     type: string;
     driver: Driver
     dateAdmision: string;
+    formattedTime:string;
     totalAmount: number;
     inPraking: boolean
 }

@@ -6,8 +6,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class TimeElapsedPipe implements PipeTransform {
   transform(dateAdmission: string): number {
     const dateAdmissionMs = new Date(dateAdmission).getTime();
-    const hourMs = new Date().getTime();
-    const diference = (hourMs - dateAdmissionMs) / (1000 * 60 * 60);
-    return Math.floor(diference);
+    console.log(1, dateAdmission);
+    const currentMs = new Date().getTime();
+    const differenceInMs = currentMs - dateAdmissionMs;
+    const differenceInHours = differenceInMs / (1000 * 60 * 60);
+    console.log(3, differenceInHours);
+
+    return Math.floor(differenceInHours);
   }
 }
