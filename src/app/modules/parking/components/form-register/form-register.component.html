@@ -1,0 +1,47 @@
+<form [formGroup]="form" (ngSubmit)="handleSubmit()" class="form-register">
+    <mat-form-field>
+        <mat-label>{{'SELECT_TYPE_VEHICLE' | translate}}</mat-label>
+        <mat-select formControlName="type">
+            <mat-option *ngFor="let type of types" value="{{type}}">{{type}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+  
+    <mat-form-field>
+        <mat-label>{{'PLAQUE' | translate}}</mat-label>
+        <input matInput formControlName="plaque">
+    </mat-form-field>
+  
+        <mat-label>{{'ENTRY_TIME' | translate}}</mat-label>
+        <input formControlName="time" class="time" placeholder="{{'PLACEHOLDER_DATE_FROM' | translate}}"
+        [ngxTimepicker]="from" [format]="24" readonly>
+    <ngx-material-timepicker #from></ngx-material-timepicker>
+
+    <hr>
+
+    <div class="data-conductor" formGroupName="driver">
+        <div class="data-conductor__title">
+            <span><strong>{{'CONDUCTOR' | translate}}</strong></span> <img width="50" src="../../../../../assets/image/volante.png">
+        </div>
+        
+            <mat-form-field>
+                <mat-label>{{'IDENTIFICATION' | translate}}</mat-label>
+                <input matInput formControlName="identification">
+                <mat-error *ngIf="form.get('identification')?.hasError('pattern')">
+                    {{'ERROR_IDENTIFICATION_NUMBERS' | translate}}
+                  </mat-error>
+                  <mat-error *ngIf="form.get('identification')?.hasError('minlength')">
+                    {{'ERROR_IDENTIFICATION_NUMBERS_MIN' | translate}}
+                  </mat-error>
+            </mat-form-field>
+        
+            <mat-form-field>
+                <mat-label>{{'NAMES_CONDUCTOR' | translate}}</mat-label>
+                <input matInput formControlName="names">
+                <mat-error *ngIf="form.get('names')?.hasError('pattern')">
+                    {{'ERROR_NAMES_NOT_NUMBERS' | translate}}
+                  </mat-error>
+            </mat-form-field>    
+        </div>
+
+    <button mat-raised-button color="primary" type="submit"  [disabled]="!form.valid">{{'REGISTER' | translate}}</button>
+</form>
