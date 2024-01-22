@@ -1,0 +1,18 @@
+<div class="container-list-vehicles">
+    <div class="range-time">
+        <input [(ngModel)]="times!.from" class="range-time__date-from" placeholder="{{'PLACEHOLDER_DATE_FROM' | translate}}"
+            [ngxTimepicker]="from" [format]="24" readonly>
+        <ngx-material-timepicker #from></ngx-material-timepicker>
+    
+        <input [(ngModel)]="times!.to" class="range-time__date-to" placeholder="{{'PLACEHOLDER_DATE_TO' | translate}}" [ngxTimepicker]="to" [format]="24"
+            readonly>
+        <ngx-material-timepicker #to></ngx-material-timepicker>
+    
+        <button mat-mini-fab color="primary">
+            <mat-icon>search</mat-icon>
+          </button>
+    </div>
+    <div *ngFor="let vehicle of vehicles">
+        <app-vehicle-card [vehicle]="vehicle"></app-vehicle-card>
+    </div>
+</div>
