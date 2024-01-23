@@ -34,7 +34,7 @@ export class VehicleCardComponent implements OnInit{
 
         if(response){
           Swal.fire({
-            text: this.translate.instant('LIQUIDATE_OKLIQUIDATE_OK'),
+            text: this.translate.instant('LIQUIDATE_OK'),
             icon: 'success',
             confirmButtonText: this.translate.instant('ACCEPT'),
           }).then((result) => {
@@ -45,7 +45,7 @@ export class VehicleCardComponent implements OnInit{
 
           //esto es un ejemplo, solo por dar una simulación de error
           Swal.fire({
-            text: this.translate.instant('LIQUIDATE_OKLIQUIDATE_OK'),
+            text: this.translate.instant('LIQUIDATE_OK'),
             icon: 'error',
             confirmButtonText: this.translate.instant('ACCEPT'),
           }).then((result) => {
